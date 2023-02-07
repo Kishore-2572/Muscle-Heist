@@ -1,0 +1,449 @@
+.App,
+.home {
+  width: 100wh;
+  height: 100vh;
+}
+
+/* ==========================  COMMON DESIGNS START =============================== */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: transparent;
+}
+
+.btn-primary,
+.btn-secondary {
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: red;
+  border-radius: 0.3rem;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid red;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: aliceblue;
+  color: black;
+  border: none;
+}
+
+img{
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+/* ==========================  COMMON DESIGNS END =============================== */
+
+/* ==========================  NAVBAR START =============================== */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  top: 0;
+}
+
+/* ==========================  NAVBAR END =============================== */
+
+/* ==========================  FOOTER START =============================== */
+#footer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(13, 17, 5);
+}
+
+.footer-left {
+  width: 50%;
+}
+
+.footer-links {
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.footer-links > a {
+  color: aliceblue;
+}
+
+.footer-links > a:hover {
+  color: red;
+}
+.social-links {
+  margin-top: 3rem;
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+.social-links > a {
+  color: aliceblue;
+}
+
+.social-links > a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.copyright {
+  margin-top: 3rem;
+  width: 100%;
+  color: aliceblue;
+}
+
+.copyright > i {
+  margin-right: 0.5rem;
+}
+
+.footer-right {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.contact {
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.footer-contact-input {
+  width: 80%;
+  height: 2em;
+  border-radius: 0.2rem;
+  background: transparent;
+  border: 1px solid aliceblue;
+  color: white;
+  padding: 0.5rem;
+}
+
+.message-input {
+  height: 5rem;
+}
+
+.footer-contact-button {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: aqua;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 700px) {
+  #footer {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .footer-right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 350px) {
+  #footer {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .footer-right {
+    width: 100%;
+  }
+}
+
+/* ==========================  FOOTER END =============================== */
+
+/* ==========================  Home Header START =============================== */
+
+#header {
+  width: 100wh;
+  height: 100vh;
+  background-image: url('../src/assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
+}
+
+.header-left {
+  height: 100%;
+  justify-content: center;
+  margin-left: 3rem;
+}
+
+.color-red {
+  font-family: 'Russo One';
+  color: red;
+}
+
+.color-white {
+  font-family: 'Play';
+  color: white;
+}
+
+@keyframes top-to-bottom {
+  from {
+    transform: translateY(-48px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.header-text-small {
+  font-size: 2rem;
+  animation: 0.4s right-to-left forwards;
+  animation-duration: 1s;
+}
+
+.header-text-big {
+  font-size: 3rem;
+  animation: 0.4s top-to-bottom forwards;
+  animation-duration: 1s;
+}
+
+.container-bottom-to-up {
+  overflow: hidden;
+  margin: 0px;
+}
+
+.header-text-bigger {
+  font-size: 5rem;
+  animation: 0.4s top-to-bottom forwards;
+  animation-duration: 1s;
+}
+
+.header-buttons {
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.header-start-btn,
+.header-about-btn {
+  width: auto;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  font-weight: bold;
+}
+.header-about-btn {
+  height: 1.9rem;
+}
+
+.header-right {
+  width: 50%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 350px) {
+  .header-left {
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text-small {
+    font-size: 2rem;
+  }
+
+  .header-text-big {
+    font-size: 3rem;
+  }
+
+  .header-text-bigger {
+    font-size: 4rem;
+  }
+}
+
+/* ==========================  Home Header END =============================== */
+
+/* ==========================  HOME ABOUT START =============================== */
+#aboutus {
+  width: 100wh;
+  height: 100vh;
+  background-image: url('../src/assets/aboutusbg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
+}
+
+.aboutus-left {
+  width: 50%;
+  margin-left: 2rem;
+  margin-top: 10%;
+}
+
+.aboutus-heading {
+  color: red;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  animation: 0.4s top-to-bottom forwards;
+  animation-duration: 1s;
+}
+
+.aboutus-description {
+  margin: 2rem auto;
+  margin-right: 10rem;
+  color: aliceblue;
+  font-size: 3rem;
+  animation: 0.4s right-to-left forwards;
+  animation-duration: 1s;
+}
+
+.aboutus-right {
+  width: 50%;
+  margin-right: 2rem;
+  margin-top: 10%;
+}
+
+.aboutus-right > .aboutus-description {
+  font-size: 2rem;
+}
+
+.aboutus-btn{
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:950px) and (min-width:600px){
+  #aboutus{
+    flex-direction: column;
+  }
+
+  .aboutus-left,.aboutus-right{
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width:600px) and (min-width:350px){
+
+  #aboutus{
+    flex-direction: column;
+  }
+
+  .aboutus-left,.aboutus-right{
+    width: 80%;
+    margin: 1rem 1rem;
+  }
+
+  .aboutus-heading{
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .aboutus-description{
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+
+/* ==========================  HOME ABOUT END =============================== */
+
+/* ==========================  HOME PLANS START =============================== */
+
+#plans{
+  width: 100wh;
+  height: auto;
+  background-image: url('../src/assets/programsbg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
+}
+.program-cards{
+  margin: 3rem auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.program-card{
+  height: 70vh;
+  width: 20rem;
+  background-color: red;
+  border-radius: 1rem;
+  
+}
+
+.program-card-img{
+  width: 90%;
+  height: 70%;
+  margin: 1rem auto;
+  
+}
+
+.program-card-img >img{
+  border-radius: 1rem;
+}
+
+.program-card-content-heading{
+  margin: 0.5rem auto;
+}
+
+.program-card-btn{
+  margin-top: 1rem;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+}
+
+@media only screen and (max-width:600px) and (min-width:350px) {
+  .program-card{
+    height: 30rem;
+    width: 20rem;
+  }
+}
+
+/* ==========================  HOME PLANS END =============================== */

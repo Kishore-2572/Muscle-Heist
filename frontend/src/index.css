@@ -1,0 +1,11 @@
+*{
+    font-family: 'Chakra Petch';
+    -ms-overflow-style: none;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: all 300ms ease-out;
+}
+::-webkit-scrollbar {
+    display: none;
+}
