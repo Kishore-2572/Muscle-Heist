@@ -56,7 +56,7 @@ a {
   border: none;
 }
 
-img{
+img {
   max-width: 100%;
   min-width: 100%;
   max-height: 100%;
@@ -347,42 +347,43 @@ img{
   font-size: 2rem;
 }
 
-.aboutus-btn{
+.aboutus-btn {
   width: fit-content;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: bold;
 }
 
-@media only screen and (max-width:950px) and (min-width:600px){
-  #aboutus{
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  #aboutus {
     flex-direction: column;
   }
 
-  .aboutus-left,.aboutus-right{
+  .aboutus-left,
+  .aboutus-right {
     width: 100%;
     margin-left: 2rem;
     margin-top: 2rem;
   }
 }
 
-@media only screen and (max-width:600px) and (min-width:350px){
-
-  #aboutus{
+@media only screen and (max-width: 600px) and (min-width: 350px) {
+  #aboutus {
     flex-direction: column;
   }
 
-  .aboutus-left,.aboutus-right{
+  .aboutus-left,
+  .aboutus-right {
     width: 80%;
     margin: 1rem 1rem;
   }
 
-  .aboutus-heading{
+  .aboutus-heading {
     font-size: 1rem;
     margin: 1rem;
   }
 
-  .aboutus-description{
+  .aboutus-description {
     font-size: 2rem;
     margin: 1rem;
   }
@@ -392,44 +393,51 @@ img{
 
 /* ==========================  HOME PLANS START =============================== */
 
-#plans{
+#plans {
   width: 100wh;
-  height: auto;
+  height: 100vh;
   background-image: url('../src/assets/programsbg.jpg');
   background-size: cover;
   background-position: center;
   overflow-y: scroll;
+  padding: 1rem;
 }
-.program-cards{
+.program-cards {
   margin: 3rem auto;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 3rem;
 }
-.program-card{
+.program-card {
   height: 70vh;
   width: 20rem;
   background-color: red;
   border-radius: 1rem;
-  
 }
 
-.program-card-img{
+.program-card:hover {
+  -webkit-box-shadow: 1px 1px 22px 2px rgba(255, 255, 255, 0.67);
+  -moz-box-shadow: 1px 1px 22px 2px rgba(255, 255, 255, 0.67);
+  box-shadow: 1px 1px 22px 2px rgba(255, 255, 255, 0.67);
+  width: 20.3rem;
+  height: 70.5vh;
+}
+
+.program-card-img {
   width: 90%;
   height: 70%;
   margin: 1rem auto;
-  
 }
 
-.program-card-img >img{
+.program-card-img > img {
   border-radius: 1rem;
 }
 
-.program-card-content-heading{
+.program-card-content-heading {
   margin: 0.5rem auto;
 }
 
-.program-card-btn{
+.program-card-btn {
   margin-top: 1rem;
   width: fit-content;
   padding: 0.5rem 1rem;
@@ -439,11 +447,38 @@ img{
   border: none;
 }
 
-@media only screen and (max-width:600px) and (min-width:350px) {
-  .program-card{
-    height: 30rem;
-    width: 20rem;
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+  #plans{
+    height: auto;
   }
 }
 
+@media only screen and (max-width: 600px) and (min-width: 350px) {
+  #plans{
+    height: auto;
+  }
+  
+  .program-card {
+    height: 30rem;
+    width: 20rem;
+  }
+
+  .program-card:hover {
+    height: 30.2rem;
+    width: 20.2rem;
+  }
+}
+@media only screen and (max-height: 700px) and (min-height: 500px) {
+
+  .program-card {
+    height: 30rem;
+    width: 20rem;
+  }
+
+  .program-card:hover {
+    height: 30.2rem;
+    width: 20.2rem;
+  }
+
+}
 /* ==========================  HOME PLANS END =============================== */
